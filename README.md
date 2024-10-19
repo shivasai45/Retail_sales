@@ -37,7 +37,10 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 3.Use the created views and queries to extract insights from the data.
 
 ## Table Creation
-'''sql
+# SQL Project 1
+
+```sql
+
 CREATE DATABASE IF NOT EXISTS sql_project_1;
 
 USE sql_project_1;
@@ -52,9 +55,10 @@ CREATE TABLE IF NOT EXISTS RETAIL (
     CATEGORY VARCHAR(21),
     QUANTITY INT,
     PRICE_PER_UNIT DECIMAL,
-    COGS DECIMAL,
-    TOTAL_SALE DECIMAL
-); 
+    COGS DECIMAL,            
+    TOTAL_SALE DECIMAL 
+);
+
 
 ## SQL Queries
 ### Q1: Retrieve all columns for sales made on '2022-11-05'
