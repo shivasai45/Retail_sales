@@ -19,7 +19,6 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
   - [Q8: Calculate the average sale for each month and find out the best-selling month in each year](#q8-calculate-the-average-sale-for-each-month-and-find-out-the-best-selling-month-in-each-year)
   - [Q9: Find the number of unique customers who purchased items from each category](#q9-find-the-number-of-unique-customers-who-purchased-items-from-each-category)
   - [Q10: Create shifts based on sale time and count the number of orders](#q10-Create-shifts-based-on-sale-time-and-count-the-number-of-orders).
-)
 - [Findings and Insights](#findings-and-insights)
 - [Contributing](#contributing)
 
