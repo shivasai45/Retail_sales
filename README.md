@@ -8,6 +8,7 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+- [Table Creation](#table-creation)
 - [Usage](#usage)
 - [SQL Queries](#sql-queries)
   - [Q1: Retrieve all columns for sales made on '2022-11-05'](#q1-retrieve-all-columns-for-sales-made-on-2022-11-05)
