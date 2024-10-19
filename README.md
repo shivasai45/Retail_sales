@@ -65,6 +65,7 @@ SELECT *
 FROM RETAIL 
 WHERE SALE_DATE = '2022-11-05';
 ```
+
 ### Q2: Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
 
 ```sql
@@ -86,6 +87,91 @@ SELECT
 FROM RETAIL 
 GROUP BY CATEGORY;
 ```
+### Q4: Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.
 
+```sql
+SELECT 
+    ROUND(AVG(AGE), 2) AS AVERAGE_AGE
+FROM RETAIL
+WHERE CATEGORY = 'BEAUTY';
+```
+### Q5: Write a SQL query to find all transactions where the total_sale is greater than 1000.
 
+```sql
+SELECT * 
+FROM RETAIL 
+WHERE TOTAL_SALE > 1000;
+```
+### Q6: Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.
 
+```sql
+SELECT 
+    CATEGORY,
+    GENDER,
+    COUNT(*) AS TRANSACTION_COUNT
+FROM RETAIL
+GROUP BY GENDER, CATEGORY
+ORDER BY CATEGORY;
+```
+
+### Q7: Write a SQL query to find the top 5 customers based on the highest total sales.
+
+```sql
+SELECT 
+  	CUSTOMER_ID,
+  	SUM(TOTAL_SALE) 
+FROM RETAIL 
+GROUP BY CUSTOMER_ID
+ORDER BY SUM(TOTAL_sALE) DESC
+LIMIT 5;
+```
+
+### Q8: Write a SQL query to calculate the average sale for each month. Find out best selling month in each year.
+
+```sql
+WITH cte1 AS (
+    SELECT 
+        EXTRACT(YEAR FROM SALE_DATE) AS year,
+        EXTRACT(MONTH FROM SALE_DATE) AS month,
+        ROUND(AVG(TOTAL_SALE), 2) AS average_sale,
+        DENSE_RANK() OVER (PARTITION BY EXTRACT(YEAR FROM SALE_DATE) ORDER BY ROUND(AVG(TOTAL_SALE), 2) DESC) AS ranked
+    FROM RETAIL
+    GROUP BY year, month
+)
+SELECT 
+    year, 
+    month,
+    average_sale 
+FROM cte1
+WHERE ranked = 1;
+```
+
+### Q9: Write a SQL query to find the number of unique customers who purchased items from each category.
+
+```sql
+SELECT 
+    CATEGORY,
+    COUNT(DISTINCT CUSTOMER_ID) AS UNIQUE_CUSTOMERS
+FROM RETAIL 
+GROUP BY CATEGORY;
+```
+
+### Q10: Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17).
+
+```sql
+CREATE VIEW exam AS
+SELECT *,
+    CASE 
+        WHEN HOUR(SALE_TIME) < 12 THEN 'Morning'
+        WHEN HOUR(SALE_TIME) >= 12 AND HOUR(SALE_TIME) <= 17 THEN 'Afternoon'
+        ELSE 'Evening'
+    END AS shift 
+FROM RETAIL;
+
+SELECT 
+    shift,
+    COUNT(*) AS ORDER_COUNT
+FROM exam
+GROUP BY shift;
+
+```
