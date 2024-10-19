@@ -58,14 +58,14 @@ CREATE TABLE IF NOT EXISTS RETAIL (
 ```
 ## SQL Queries 
 
-## Q1: Write a SQL query to retrieve all columns for sales made on '2022-11-05.
+### Q1: Write a SQL query to retrieve all columns for sales made on '2022-11-05.
 
 ```sql
 SELECT * 
 FROM RETAIL 
 WHERE SALE_DATE = '2022-11-05';
 ```
-## Q2: Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
+### Q2: Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
 
 ```sql
 SELECT * 
@@ -76,7 +76,7 @@ WHERE
     AND DATE_FORMAT(SALE_DATE, '%Y-%m') = '2022-11';
 ```
 
-## Q3: Write a SQL query to calculate the total sales (total_sale) for each category.
+### Q3: Write a SQL query to calculate the total sales (total_sale) for each category.
 
 ```sql
 SELECT 
@@ -86,5 +86,6 @@ SELECT
 FROM RETAIL 
 GROUP BY CATEGORY;
 ```
+
 
 
