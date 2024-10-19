@@ -56,14 +56,35 @@ CREATE TABLE IF NOT EXISTS RETAIL (
     TOTAL_SALE DECIMAL 
 );
 ```
-## Q1: Retrieve all columns for sales made on '2022-11-05'
+## SQL Queries 
+
+## Q1: Write a SQL query to retrieve all columns for sales made on '2022-11-05.
 
 ```sql
 SELECT * 
 FROM RETAIL 
 WHERE SALE_DATE = '2022-11-05';
+```
+## Q2: Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
 
+```sql
+SELECT * 
+FROM RETAIL 
+WHERE 
+    CATEGORY = 'CLOTHING' 
+    AND QUANTITY > 10 
+    AND DATE_FORMAT(SALE_DATE, '%Y-%m') = '2022-11';
+```
 
+## Q3: Write a SQL query to calculate the total sales (total_sale) for each category.
 
+```sql
+SELECT 
+    CATEGORY,
+    COUNT(*) AS TOTALSALES_COUNT, 
+    SUM(TOTAL_SALE) AS TOTAL_AMOUNT
+FROM RETAIL 
+GROUP BY CATEGORY;
+```
 
 
