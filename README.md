@@ -175,3 +175,13 @@ FROM exam
 GROUP BY shift;
 
 ```
+## Findings and Insights
+
+1. **Category Performance**: 
+   The **Clothing** category showed strong sales, indicating opportunities for targeted marketing and inventory management.
+
+2. **Sales by Shift**: 
+   Analyzing sales by shift revealed peak shopping times, allowing for optimized staffing and promotional strategies.
+
+3. **Top Customers**: 
+   Identifying top customers based on sales can enhance loyalty programs and targeted marketing efforts.
