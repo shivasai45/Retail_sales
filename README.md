@@ -9,7 +9,7 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 - [Table Creation](#table-creation)
 - [Usage](#usage)
 - [SQL Queries](#sql-queries)
-  - [Q1: Retrieve all columns for sales made on '2022-11-05'](#q1-retrieve-all-columns-for-sales-made-on-'2022-11-05')
+  - [Q1: Retrieve all columns for sales made on '2022-11-05'](#q1-retrieve-all-columns-for-sales-made-on-2022-11-05)
   - [Q2: Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in Nov-2022](#q2-retrieve-all-transactions-where-the-category-is-clothing-and-the-quantity-sold-is-more-than-10-in-nov-2022)
   - [Q3: Calculate the total sales (total_sale) for each category](#q3-calculate-the-total-sales-total_sale-for-each-category)
   - [Q4: Find the average age of customers who purchased items from the 'Beauty' category](#q4-find-the-average-age-of-customers-who-purchased-items-from-the-beauty-category)
