@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS RETAIL (
 ```
 ## SQL Queries 
 
-### Q1: Write a SQL query to retrieve all columns for sales made on '2022-11-05.
+### Q1: Retrieve all columns for sales made on '2022-11-05.
 
 ```sql
 SELECT * 
@@ -66,7 +66,7 @@ FROM RETAIL
 WHERE SALE_DATE = '2022-11-05';
 ```
 
-### Q2: Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
+### Q2: Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
 
 ```sql
 SELECT * 
@@ -77,7 +77,7 @@ WHERE
     AND DATE_FORMAT(SALE_DATE, '%Y-%m') = '2022-11';
 ```
 
-### Q3: Write a SQL query to calculate the total sales (total_sale) for each category.
+### Q3: Calculate the total sales (total_sale) for each category.
 
 ```sql
 SELECT 
@@ -87,7 +87,7 @@ SELECT
 FROM RETAIL 
 GROUP BY CATEGORY;
 ```
-### Q4: Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.
+### Q4: Find the average age of customers who purchased items from the 'Beauty' category.
 
 ```sql
 SELECT 
@@ -95,14 +95,14 @@ SELECT
 FROM RETAIL
 WHERE CATEGORY = 'BEAUTY';
 ```
-### Q5: Write a SQL query to find all transactions where the total_sale is greater than 1000.
+### Q5: Find all transactions where the total_sale is greater than 1000.
 
 ```sql
 SELECT * 
 FROM RETAIL 
 WHERE TOTAL_SALE > 1000;
 ```
-### Q6: Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.
+### Q6: Find the total number of transactions (transaction_id) made by each gender in each category.
 
 ```sql
 SELECT 
@@ -114,7 +114,7 @@ GROUP BY GENDER, CATEGORY
 ORDER BY CATEGORY;
 ```
 
-### Q7: Write a SQL query to find the top 5 customers based on the highest total sales.
+### Q7: Find the top 5 customers based on the highest total sales.
 
 ```sql
 SELECT 
@@ -126,7 +126,7 @@ ORDER BY SUM(TOTAL_sALE) DESC
 LIMIT 5;
 ```
 
-### Q8: Write a SQL query to calculate the average sale for each month. Find out best selling month in each year.
+### Q8: Calculate the average sale for each month. Find out best selling month in each year.
 
 ```sql
 WITH cte1 AS (
