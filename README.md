@@ -33,7 +33,11 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 
 2.Use MySQL Workbench to view the database and execute additional queries.
 
-3. Use the created views and queries to extract insights from the data.
+3.Use the created views and queries to extract insights from the data.
 
+## SQL Queries
+### Q1: Retrieve all columns for sales made on '2022-11-05'
+```sql
+SELECT * FROM RETAIL WHERE SALE_DATE = '2022-11-05';
 
 
