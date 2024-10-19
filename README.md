@@ -37,7 +37,6 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 3.Use the created views and queries to extract insights from the data.
 
 ## Table Creation
-# SQL Project 1
 
 ```sql
 
@@ -60,8 +59,4 @@ CREATE TABLE IF NOT EXISTS RETAIL (
 );
 
 
-## SQL Queries
-### Q1: Retrieve all columns for sales made on '2022-11-05'
-```sql
-SELECT * FROM RETAIL WHERE SALE_DATE = '2022-11-05';
-''' 
+
