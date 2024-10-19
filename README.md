@@ -39,5 +39,5 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 ### Q1: Retrieve all columns for sales made on '2022-11-05'
 ```sql
 SELECT * FROM RETAIL WHERE SALE_DATE = '2022-11-05';
-
+'''
 
