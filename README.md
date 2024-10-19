@@ -39,7 +39,4 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 ### Q1: Retrieve all columns for sales made on '2022-11-05'
 ```sql
 SELECT * FROM RETAIL WHERE SALE_DATE = '2022-11-05';
-
-### Q2: Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022
-
-
+''' 
