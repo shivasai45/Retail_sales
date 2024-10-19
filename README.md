@@ -66,7 +66,7 @@ FROM RETAIL
 WHERE SALE_DATE = '2022-11-05';
 ```
 
-### Q2: Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022.
+### Q2: Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in Nov-2022
 
 ```sql
 SELECT * 
@@ -102,7 +102,7 @@ SELECT *
 FROM RETAIL 
 WHERE TOTAL_SALE > 1000;
 ```
-### Q6: Find the total number of transactions (transaction_id) made by each gender in each category.
+### Q6: Find the total number of transactions made by each gender in each category.
 
 ```sql
 SELECT 
@@ -126,7 +126,7 @@ ORDER BY SUM(TOTAL_sALE) DESC
 LIMIT 5;
 ```
 
-### Q8: Calculate the average sale for each month. Find out best selling month in each year.
+### Q8: Calculate the average sale for each month and find out the best-selling month in each year.
 
 ```sql
 WITH cte1 AS (
