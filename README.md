@@ -4,7 +4,7 @@
 This project involves analyzing retail sales data using MySQL. The purpose is to extract insights and perform various data analysis tasks using SQL queries.
 
 ## Table of Contents
-- [Description](#description)
+- [Description]
 - [Installation](#installation)
 - [Table Creation](#table-creation)
 - [Usage](#usage)
