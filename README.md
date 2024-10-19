@@ -20,10 +20,9 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
   - [Q8: Calculate the average sale for each month and find out the best-selling month in each year](#q8-calculate-the-average-sale-for-each-month-and-find-out-the-best-selling-month-in-each-year)
   - [Q9: Find the number of unique customers who purchased items from each category](#q9-find-the-number-of-unique-customers-who-purchased-items-from-each-category)
   - [Q10: Create each shift and number of orders](#q10-create-each-shift-and-number-of-orders)
-- [ER Diagram](#er-diagram)
 - [Findings and Insights](#findings-and-insights)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 1. Clone the repository:
@@ -33,5 +32,8 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 1.Run the provided SQL queries to analyze the data.
 
 2.Use MySQL Workbench to view the database and execute additional queries.
+
+3. Use the created views and queries to extract insights from the data.
+
 
 
