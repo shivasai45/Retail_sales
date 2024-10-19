@@ -4,7 +4,7 @@
 This project involves analyzing retail sales data using MySQL. The purpose is to extract insights and perform various data analysis tasks using SQL queries.
 
 ## Table of Contents
-- [Description]
+- [Description](#Dsecription)
 - [Installation](#installation)
 - [Table Creation](#table-creation)
 - [Usage](#usage)
@@ -55,5 +55,15 @@ CREATE TABLE IF NOT EXISTS RETAIL (
     COGS DECIMAL,            
     TOTAL_SALE DECIMAL 
 );
+```
+## Q1: Retrieve all columns for sales made on '2022-11-05'
+
+```sql
+SELECT * 
+FROM RETAIL 
+WHERE SALE_DATE = '2022-11-05';
+
+
+
 
 
