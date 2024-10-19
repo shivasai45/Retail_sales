@@ -29,3 +29,8 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/sql_project_1.git
+## Usage
+1.Run the provided SQL queries to analyze the data.
+2.Use MySQL Workbench to view the database and execute additional queries.
+
+
