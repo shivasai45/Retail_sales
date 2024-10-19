@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS RETAIL (
     PRICE_PER_UNIT DECIMAL,
     COGS DECIMAL,
     TOTAL_SALE DECIMAL
-); '''
+); 
 
 ## SQL Queries
 ### Q1: Retrieve all columns for sales made on '2022-11-05'
