@@ -1,4 +1,4 @@
-# MySQL Retail Analysis Project
++# MySQL Retail Analysis Project
 
 ## Description
 This project involves analyzing retail sales data using MySQL. The purpose is to extract insights and perform various data analysis tasks using SQL queries.
@@ -18,7 +18,8 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
   - [Q7: Find the top 5 customers based on the highest total sales](#q7-find-the-top-5-customers-based-on-the-highest-total-sales)
   - [Q8: Calculate the average sale for each month and find out the best-selling month in each year](#q8-calculate-the-average-sale-for-each-month-and-find-out-the-best-selling-month-in-each-year)
   - [Q9: Find the number of unique customers who purchased items from each category](#q9-find-the-number-of-unique-customers-who-purchased-items-from-each-category)
-  - [Q10: Create each shift and number of orders](#q10-create-each-shift-and-number-of-orders)
+  - [Q10: Create shifts based on sale time and count the number of orders](#q10-Create-shifts-based-on-sale-time-and-count-the-number-of-orders).
+)
 - [Findings and Insights](#findings-and-insights)
 - [Contributing](#contributing)
 
