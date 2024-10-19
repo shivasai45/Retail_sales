@@ -188,3 +188,8 @@ GROUP BY shift;
 5. **Top Customers**: 
 
    Identifying top customers based on sales can enhance loyalty programs and targeted marketing efforts.
+
+## Contributing
+
+Contributions are welcome! Please create a pull request or open an issue to discuss any changes.
+
