@@ -146,7 +146,7 @@ FROM cte1
 WHERE ranked = 1;
 ```
 
-### Q9: Write a SQL query to find the number of unique customers who purchased items from each category.
+### Q9: Find the number of unique customers who purchased items from each category.
 
 ```sql
 SELECT 
@@ -156,7 +156,7 @@ FROM RETAIL
 GROUP BY CATEGORY;
 ```
 
-### Q10: Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17).
+### Q10: Create shifts based on sale time and count the number of orders.
 
 ```sql
 CREATE VIEW exam AS
