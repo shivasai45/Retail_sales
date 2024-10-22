@@ -21,6 +21,8 @@ This project involves analyzing retail sales data using MySQL. The purpose is to
   - [Q10: Create shifts based on sale time and count the number of orders](#q10-Create-shifts-based-on-sale-time-and-count-the-number-of-orders).
 - [Findings and Insights](#findings-and-insights)
 - [Contributing](#contributing)
+- [License](#license)
+
 
 
 ## Installation
@@ -193,4 +195,11 @@ GROUP BY shift;
 ## Contributing
 
 Contributions are welcome! Please create a pull request or open an issue to discuss any changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+
+
 
